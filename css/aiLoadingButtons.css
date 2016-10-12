@@ -1,0 +1,216 @@
+/*
+ * Built-In Loading Effect in Buttons
+ *
+ * repo: https://github.com/alexanderkx/aiLoadingButtons
+ */
+
+.btn {
+    -moz-transition: all,ease-in-out .2s;
+    -o-transition: all,ease-in-out .2s;
+    -webkit-transition: all,ease-in-out .2s;
+    transition: all,ease-in-out .2s;
+}
+
+.btn:hover,
+.btn-primary,
+.btn-primary:hover,
+.btn-info,
+.btn-info:hover,
+.btn-success,
+.btn-success:hover,
+.btn-warning,
+.btn-warning:hover,
+.btn-danger,
+.btn-danger:hover,
+.btn-dark,
+.btn-dark:hover {
+    color: #fff;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0;
+    font-size: 14px;
+    text-decoration: none;
+    background: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn-outline {
+    border: 1px solid #0a8cfd;
+    color: #0a8cfd;
+}
+
+.btn-outline:hover {
+    background: #0a8cfd;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #005888;
+    border: 1px solid #005888;
+}
+
+.btn-primary:hover {
+    background: #0079bb;
+}
+
+.btn-info {
+    background: #49AFCD;
+    border: 1px solid #49AFCD;
+}
+
+.btn-info:hover {
+    background: #71c1d8;
+}
+
+.btn-success {
+    background: #5BB75B;
+    border: 1px solid #5BB75B;
+}
+
+.btn-success:hover {
+    background: #7ec77e;
+}
+
+.btn-warning {
+    background: #FAA732;
+    border: 1px solid #FAA732;
+}
+
+.btn-warning:hover {
+    background: #fbbc64;
+}
+
+.btn-danger {
+    background: #DA4F49;
+    border: 1px solid #DA4F49;
+}
+
+.btn-danger:hover {
+    background: #e37873;
+}
+
+.btn-dark {
+    background: #363636;
+    border: 1px solid #363636;
+}
+
+.btn-dark:hover {
+    background: #505050;
+}
+
+/* Loading style */
+.btn-load--circle:after {
+    content: " ";
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    right: 42%;
+    animation: circle 1.3s infinite linear;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+/* Outline button loading style */
+.btn-load--circle.btn-outline {
+    color: #fff;
+}
+
+.btn-load--circle.btn-outline:hover {
+    background-color: #fff;
+}
+
+.btn-load--circle.btn-outline:after {
+    border-color: #0a8cfd;
+    border-right-color: transparent;
+}
+
+/* Primary button loading style */
+.btn-load--circle.btn-primary {
+    color: #0079bb;
+    background-color: #0079bb;
+}
+
+.btn-load--circle.btn-primary:hover {
+    background-color: #0079bb;
+}
+
+/* Info button loading style */
+.btn-load--circle.btn-info {
+    color: #71c1d8;
+    background-color: #71c1d8;
+}
+
+.btn-load--circle.btn-info:hover {
+    background-color: #71c1d8;
+}
+
+/* Success button loading style */
+.btn-load--circle.btn-success {
+    color: #7ec77e;
+    background-color: #7ec77e;
+}
+
+.btn-load--circle.btn-success:hover {
+    background-color: #7ec77e;
+}
+
+/* Warning button loading style */
+.btn-load--circle.btn-warning {
+    color: #fbbc64;
+    background-color: #fbbc64;
+}
+
+.btn-load--circle.btn-warning:hover {
+    background-color: #fbbc64;
+}
+
+/* Danger button loading style */
+.btn-load--circle.btn-danger {
+    color: #e37873;
+    background-color: #e37873;
+}
+
+.btn-load--circle.btn-danger:hover {
+    background-color: #e37873;
+}
+
+/* Dark button loading style */
+.btn-load--circle.btn-dark {
+    color: #505050;
+    background-color: #505050;
+}
+
+.btn-load--circle.btn-dark:hover {
+    background-color: #505050;
+}
+
+.btn-load--circle.btn-dark:after,
+.btn-load--circle.btn-primary:after,
+.btn-load--circle.btn-info:after,
+.btn-load--circle.btn-success:after,
+.btn-load--circle.btn-warning:after,
+.btn-load--circle.btn-danger:after {
+    border-color: #fff;
+    border-right-color: transparent;
+}
+
+/* Animation */
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
