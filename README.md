@@ -1,4 +1,6 @@
 # Кнопки со встроенным индикатором загрузки
+
+## Built-In Loading Effect in Buttons
 ![](http://alexanderweb.ru/upload/git/aiLoadingButtons.gif?raw=true])
 
 Накидал небольшой вариант отображения индикации загрузки чего либо непосредственно в кнопке (например при отправки формы).
