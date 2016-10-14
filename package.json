@@ -1,0 +1,33 @@
+{
+  "name": "ailoadingbtns",
+  "version": "1.0.0",
+  "description": "Built-In Loading Effect in Buttons",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderkx/aiLoadingButtons.git"
+  },
+  "keywords": [
+    "buttons",
+    "loading",
+    "animation"
+  ],
+  "author": "Alexander Igorevich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexanderkx/aiLoadingButtons/issues"
+  },
+  "homepage": "https://github.com/alexanderkx/aiLoadingButtons#readme",
+  "devDependencies": {
+    "connect-livereload": "^0.6.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-stylus": "^2.5.0",
+    "nib": "^1.1.2",
+  }
+}

@@ -1,0 +1,64 @@
+.btn-load--circle
+  &:after
+    content " "
+    position absolute
+    height 14px
+    width 14px
+    right 42%
+    animation circle 1.3s infinite linear
+    border 2px solid transparent
+    border-radius 50%
+  &.btn-outline
+    color #fff
+    &:hover
+      background-color #fff
+    &:after
+      border-color #0a8cfd
+      border-right-color transparent
+  &.btn-primary
+    color #0079bb
+    background-color #0079bb
+    &:hover
+      background-color #0079bb
+  &.btn-info
+    color #71c1d8
+    background-color #71c1d8
+    &:hover
+      background-color #71c1d8
+  &.btn-success
+    color #7ec77e
+    background-color #7ec77e
+    &:hover
+      background-color #7ec77e
+  &.btn-warning
+    color #fbbc64
+    background-color #fbbc64
+    &:hover
+      background-color #fbbc64
+  &.btn-danger
+    color #e37873
+    background-color #e37873
+    &:hover
+      background-color #e37873
+  &.btn-dark
+    color #505050
+    background-color #505050
+    &:hover
+      background-color #505050
+
+.btn-load--circle.btn-dark:after,
+.btn-load--circle.btn-primary:after,
+.btn-load--circle.btn-info:after,
+.btn-load--circle.btn-success:after,
+.btn-load--circle.btn-warning:after,
+.btn-load--circle.btn-danger:after
+  border-color #fff
+  border-right-color transparent
+
+@keyframes circle
+    0%
+      transform rotate(0deg)
+
+    100%
+      transform rotate(360deg)
+

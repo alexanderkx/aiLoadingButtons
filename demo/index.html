@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Built-In Loading Effect in Buttons</title>
-	<link rel="stylesheet" href="../css/aiLoadingButtons.min.css">
+	<link rel="stylesheet" href="../dist/css/aiLoadingButtons.min.css">
   <style>
     body {
       font-family: arial;
@@ -22,6 +22,10 @@
     }
     .buttons {
       margin-top: 20px;
+      padding: 15px;
+    }
+    .circle_only {
+      background-color: #F1F1DC;
     }
   </style>
 </head>
@@ -30,7 +34,19 @@
 <div class="wrapper">
   <h1>Built-In Loading Effect in Buttons</h1>
   <a href="https://github.com/alexanderkx/aiLoadingButtons">https://github.com/alexanderkx/aiLoadingButtons</a>
-  <div class="buttons">
+  <div class="buttons circle">
+  <h3><pre>.btn-load--circle</pre></h3>
+    <button class="btn btn-outline">Click Me!</button>
+    <button class="btn btn-primary">Click Me!</button>
+    <button class="btn btn-info">Click Me!</button>
+    <br><br>
+    <button class="btn btn-success">Click Me!</button>
+    <button class="btn btn-warning">Click Me!</button>
+    <button class="btn btn-danger">Click Me!</button>
+    <button class="btn btn-dark">Click Me!</button>
+  </div>
+  <div class="buttons circle_only">
+  <h3><pre>.btn-load--circle-only</pre></h3>
     <button class="btn btn-outline">Click Me!</button>
     <button class="btn btn-primary">Click Me!</button>
     <button class="btn btn-info">Click Me!</button>

@@ -1,5 +1,5 @@
 # Кнопки со встроенным индикатором загрузки
-![](http://alexanderweb.ru/upload/git/aiLoadingButtons_git_final.gif?raw=true])
+![](http://alexanderweb.ru/upload/git/aiLoadingButtons.gif?raw=true])
 
 Накидал небольшой вариант отображения индикации загрузки чего либо непосредственно в кнопке (например при отправки формы).
 
@@ -25,8 +25,26 @@
 <button class="btn btn-dark">Dark</button>
 ```
 
-Для стилизации процесса загрузки необходимо добавить класс `.btn-load--circle`.  
-_На данный момент есть только один вариант анимации, надеюсь буду постепенно расширять список._
+Настроить цвета можно в `_colors.styl`:
+
+```css
+$outline = #0a8cfd
+$primary = #005888
+$primary_hover = #0079bb
+$info = #49AFCD
+$info_hover = #71c1d8
+$success = #5BB75B
+$success_hover = #7ec77e
+$warning = #FAA732
+$warning_hover = #fbbc64
+$danger = #DA4F49
+$danger_hover = #e37873
+$dark = #363636
+$dark_hover = #505050
+```
+
+Для стилизации процесса загрузки необходимо добавить класс `.btn-load--circle` или `btn-load--circle-only` в зависимости от выбранного типа анимации.  
+_На данный момент есть только два варианта анимации, надеюсь буду постепенно расширять список._
 
 ### TODO List
 
